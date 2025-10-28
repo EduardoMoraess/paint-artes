@@ -1,0 +1,43 @@
+ body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background: #f2f2f2;
+     margin: 0;
+     height: 100vh;
+     font-family: sans-serif;
+ }
+
+ h1 {
+     margin: 10px 0;
+ }
+
+ .toolbar {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     justify-content: center;
+     margin-bottom: 10px;
+ }
+
+ canvas {
+     border: 2px solid #000;
+     background: #fff;
+     cursor: crosshair;
+     touch-action: none;
+ }
+
+ button,
+ select,
+ input[type=color],
+ input[type=range] {
+     cursor: pointer;
+     padding: 5px;
+     border-radius: 5px;
+     border: 1px solid #aaa;
+ }
+
+ button.active {
+     background: #007bff;
+     color: white;
+ }

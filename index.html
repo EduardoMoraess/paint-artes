@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🎨 Super Paint</h1>
+    <div class="toolbar">
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="brushSize" min="1" max="50" value="5">
+        <select id="tool">
+            <option value="brush">Pincel</option>
+            <option value="eraser">Borracha</option>
+            <option value="line">Linha</option>
+            <option value="rect">Retângulo</option>
+            <option value="circle">Círculo</option>
+        </select>
+        <button id="undoBtn">↩️ Desfazer</button>
+        <button id="redoBtn">↪️ Refazer</button>
+        <button id="clearBtn">🧹 Limpar</button>
+        <button id="saveBtn">💾 Salvar</button>
+    </div>
+
+    <canvas id="paintCanvas" width="900" height="550"></canvas>
+
+    <script src="paint.js"></script>
+
+</body>
+
+</html>
